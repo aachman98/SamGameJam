@@ -16,6 +16,6 @@ public class TrampolineForceScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector3(200, 2000, 0));
+        collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector3(200, 3000, 0));
     }
 }
