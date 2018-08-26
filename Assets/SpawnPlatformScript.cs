@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SpawnPlatformScript : MonoBehaviour {
 
-    private float nextSpawningPoint = 0.0f;
+    public GameObject[] platforms;
+    private int platformToRespawn = 0;
+    private float nextSpawningPoint = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +17,10 @@ public class SpawnPlatformScript : MonoBehaviour {
 	void Update () {
 		if (transform.position.x >= nextSpawningPoint)
         {
-            Debug.Log("Spawn platform: " + nextSpawningPoint);
+            Debug.Log("Spawn platform");
+            platforms[platformToRespawn].transform.position += new Vector3(48, 0, 0);
             nextSpawningPoint += 16;
+            platformToRespawn = (platformToRespawn + 1) % 3;
         }
 	}
 }
