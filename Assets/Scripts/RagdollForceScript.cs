@@ -6,7 +6,7 @@ public class RagdollForceScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        GetComponent<Rigidbody2D>().AddForce(new Vector2(200, 50));
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(3000, 200));
 	}
 	
 	// Update is called once per frame

@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GameplayTest.unity
+    guid: 9b775a752f16ef540851c940260084b3
+  - enabled: 0
+    path: Assets/Scenes/RagdollTest.unity
+    guid: 23db703438699c0459f39360cc354cdb
+  - enabled: 0
+    path: Assets/Scenes/TrampolineTest.unity
+    guid: 5d1d791e2683be240a70ae6980da496e

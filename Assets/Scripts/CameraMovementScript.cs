@@ -6,18 +6,22 @@ public class CameraMovementScript : MonoBehaviour {
 
     public GameObject ragdoll;
     private bool followRagdoll = true;
+    private int score, scoreMultiplier = 1;
 
 	// Use this for initialization
 	void Start () {
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
         if (followRagdoll)
         {
-            if (ragdoll.transform.position.x > 0)
+            if (ragdoll.transform.position.x >= transform.position.x)
+            {
                 transform.position = new Vector3(ragdoll.transform.position.x, transform.position.y, transform.position.z);
+                score += scoreMultiplier;
+                Debug.Log("Score: " + score);
+            }
         }
 	}
 
