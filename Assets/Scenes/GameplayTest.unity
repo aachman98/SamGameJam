@@ -663,6 +663,56 @@ Prefab:
       propertyPath: m_ConnectedAnchor.y
       value: -0.1625
       objectReference: {fileID: 0}
+    - target: {fileID: 50539978837404020, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 50150189133435292, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50106925332100232, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50821965378370568, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50863807909426088, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50545018564983884, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50074808195834658, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50265113193693626, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50034751836453592, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 50660741661136392, guid: dda23992d2ac74b4f81409b35da663f6,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dda23992d2ac74b4f81409b35da663f6, type: 2}
   m_IsPrefabParent: 0
