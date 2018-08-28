@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RagdollForceScript : MonoBehaviour {
-    private bool trampolineFinished = false;
+    private bool trampolineFinished = false, gameOver = false;
 
 	// Use this for initialization
 	void Start () {
@@ -12,12 +12,18 @@ public class RagdollForceScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (trampolineFinished)
+		if (trampolineFinished && !gameOver)
         {
-            if (GetComponent<Rigidbody2D>().velocity.magnitude > 0)
+            if (GetComponent<Rigidbody2D>().velocity.magnitude < 0.1)
             {
                 Debug.Log("Game Over");
+                gameOver = true;
             }
         }
 	}
+
+    public void TrampolineFinished()
+    {
+        trampolineFinished = true;
+    }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TapInputScript : MonoBehaviour {
 
-    public GameObject trampoline;
+    public GameObject trampoline, ragdoll;
     private int trampolineCount;
 
 	// Use this for initialization
@@ -33,5 +33,7 @@ public class TapInputScript : MonoBehaviour {
     {
         Instantiate(trampoline).transform.position = new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(xCoordinate, 0, 0)).x, -3.5f, 0);
         trampolineCount--;
+        if (trampolineCount == 0)
+            ragdoll.GetComponent<RagdollForceScript>().TrampolineFinished();
     }
 }

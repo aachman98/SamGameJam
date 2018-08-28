@@ -221,6 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trampoline: {fileID: 1355260142834922, guid: 2196321616cddc945a4699137b95f5ec, type: 2}
+  ragdoll: {fileID: 1627515712}
 --- !u!114 &230267915
 MonoBehaviour:
   m_ObjectHideFlags: 0
