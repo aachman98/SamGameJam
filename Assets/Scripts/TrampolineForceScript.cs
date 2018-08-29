@@ -5,6 +5,8 @@ using UnityEngine;
 public class TrampolineForceScript : MonoBehaviour {
     private float timeToDestroy = 0;
 
+    private float trampolineForceLevel = 3; // set from shared pref
+
 	// Use this for initialization
 	void Start () {
 		

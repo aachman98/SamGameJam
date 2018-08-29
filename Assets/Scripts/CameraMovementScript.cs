@@ -6,7 +6,9 @@ public class CameraMovementScript : MonoBehaviour {
 
     public GameObject ragdoll;
     private bool followRagdoll = true;
-    private int score, scoreMultiplier = 1;
+    private int score;
+
+    private int scoreMultiplier = 1; // set from shared pref
 
 	// Use this for initialization
 	void Start () {

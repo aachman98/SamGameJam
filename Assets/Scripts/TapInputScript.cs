@@ -9,7 +9,7 @@ public class TapInputScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        trampolineCount = 3; // set from Shared pref
+        trampolineCount = 3; // set from shared pref
 	}
 	
 	// Update is called once per frame
