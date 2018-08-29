@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RagdollForceScript : MonoBehaviour {
+    public GameObject Camera;
     private bool trampolineFinished = false, gameOver = false;
 
 	// Use this for initialization
@@ -18,6 +19,7 @@ public class RagdollForceScript : MonoBehaviour {
             {
                 Debug.Log("Game Over");
                 gameOver = true;
+                Camera.GetComponent<CameraMovementScript>().StopCameraMovement();
             }
         }
 	}
