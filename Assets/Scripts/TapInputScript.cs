@@ -9,7 +9,7 @@ public class TapInputScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        trampolineCount = 3; // set from shared pref
+        trampolineCount = 5; // set from shared pref
 	}
 	
 	// Update is called once per frame
@@ -31,7 +31,7 @@ public class TapInputScript : MonoBehaviour {
 
     void SpawnTrampoline(float xCoordinate)
     {
-        Instantiate(trampoline).transform.position = new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(xCoordinate, 0, 0)).x, -3.5f, 0);
+        Instantiate(trampoline).transform.position = new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(xCoordinate, 0, 0)).x, -4, 0);
         trampolineCount--;
         if (trampolineCount == 0)
             ragdoll.GetComponent<RagdollForceScript>().TrampolineFinished();
