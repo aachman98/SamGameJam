@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class RagdollForceScript : MonoBehaviour {
     public GameObject Camera;
+    public GameObject scoreText, gameOverPanel;
     private bool trampolineFinished = false, gameOver = false;
 
-    private int ragdollInitialForceLevel = 3; // set from shared pref
+    private int ragdollInitialForceLevel = 50; // set from shared pref
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +23,8 @@ public class RagdollForceScript : MonoBehaviour {
                 Debug.Log("Game Over");
                 gameOver = true;
                 Camera.GetComponent<CameraMovementScript>().StopCameraMovement();
+                scoreText.SetActive(false);
+                gameOverPanel.SetActive(true);
             }
         }
 	}

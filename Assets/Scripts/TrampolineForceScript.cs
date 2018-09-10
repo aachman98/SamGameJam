@@ -5,7 +5,7 @@ using UnityEngine;
 public class TrampolineForceScript : MonoBehaviour {
     private float timeToDestroy = 0;
 
-    private float trampolineForceLevel = 3; // set from shared pref
+    private float trampolineForceLevel = 10; // set from shared pref
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +23,6 @@ public class TrampolineForceScript : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector3(200, 500, 0));
+        collision.collider.GetComponent<Rigidbody2D>().AddForce(new Vector3(200 * trampolineForceLevel, 100 * trampolineForceLevel, 0));
     }
 }
