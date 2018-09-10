@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074b058c06b4e6c47a1ca18ac2cacd9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trampoline: {fileID: 1355260142834922, guid: 2196321616cddc945a4699137b95f5ec, type: 2}
+  trampoline: {fileID: 1671998187067556, guid: 2cadcea1e41d8a54ca68ca053f802372, type: 2}
   ragdoll: {fileID: 1579647321}
 --- !u!114 &230267915
 MonoBehaviour:

@@ -31,7 +31,7 @@ public class TapInputScript : MonoBehaviour {
 
     void SpawnTrampoline(float xCoordinate)
     {
-        Instantiate(trampoline).transform.position = new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(xCoordinate, 0, 0)).x, -4, 0);
+        Instantiate(trampoline).transform.position = new Vector3(Camera.main.ScreenToWorldPoint(new Vector3(xCoordinate, 0, 0)).x, -4.3f, 0);
         trampolineCount--;
         if (trampolineCount == 0)
             ragdoll.GetComponent<RagdollForceScript>().TrampolineFinished();
